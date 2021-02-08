@@ -1,0 +1,40 @@
+[base]
+name=CentOS-5.8 - Base
+failovermethod=priority
+baseurl=http://vault.centos.org/5.8/os/$basearch/
+gpgcheck=1
+gpgkey=http://vault.centos.org/RPM-GPG-KEY-CentOS-5
+
+#released updates 
+[updates]
+name=CentOS-5.8 - Updates
+failovermethod=priority
+baseurl=http://vault.centos.org/5.8/updates/$basearch/
+gpgcheck=1
+gpgkey=http://vault.centos.org/RPM-GPG-KEY-CentOS-5
+
+#additional packages that may be useful
+[extras]
+name=CentOS-5.8 - Extras
+failovermethod=priority
+baseurl=http://vault.centos.org/5.8/extras/$basearch/
+gpgcheck=1
+gpgkey=http://vault.centos.org/RPM-GPG-KEY-CentOS-5
+
+#additional packages that extend functionality of existing packages
+[centosplus]
+name=CentOS-5.8 - Plus
+failovermethod=priority
+baseurl=http://vault.centos.org/5.8/centosplus/$basearch/
+gpgcheck=1
+enabled=0
+gpgkey=http://vault.centos.org/RPM-GPG-KEY-CentOS-5
+
+#contrib - packages by Centos Users
+[contrib]
+name=CentOS-5.8 - Contrib
+failovermethod=priority
+baseurl=http://vault.centos.org/5.8/contrib/$basearch/
+gpgcheck=1
+enabled=0
+gpgkey=http://vault.centos.org/RPM-GPG-KEY-CentOS-5
