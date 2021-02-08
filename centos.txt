@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/delian2020/centos/master/CentOS5-Base.repo
